@@ -1,0 +1,17 @@
+﻿@model EmailModel
+
+<div class="container" style="margin-top: 10px">
+    <div class="row">
+        <div class="col-md-6">
+<h3>Email Verify</h3>
+<form method="post" asp-controller="Home" asp-action="UploadFile" enctype="multipart/form-data">
+    <div class="form-control">
+        <input type="file" class="form-control" asp-for="File" accept=".xls, .xlsx, .csv, .json" />
+    </div>
+    <div class="form-control">
+        <input type="email" class="form-control" asp-for="Email" value="" placeholder="example@mail.com" />
+    </div>
+    <button class="btn btn-success" type="submit">Submit</button>
+</form>
+</div>
+</
